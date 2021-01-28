@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import './index.css';
 
 import Header from "./components/Header";
 import AllCourses from "./components/AllCourses";

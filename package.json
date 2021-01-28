@@ -1,7 +1,7 @@
 {
   "name": "course-nav-react",
   "version": "0.1.0",
-  "homepage": "http://vikanazarova.github.io/react-course-nav",
+  "homepage": "https://vikanazarova.github.io/react-course-nav/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
