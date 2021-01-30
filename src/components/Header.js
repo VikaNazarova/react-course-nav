@@ -4,7 +4,7 @@ import Search from './Search';
 function Header() {
   return (
     <header>
-		<div>
+		<div className="container">
 			<nav>
 				<a href="/">Course Navigator</a>
 				<a href="/categories">Categories</a>

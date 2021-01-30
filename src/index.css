@@ -22,7 +22,7 @@ header {
 	padding: 2rem;
 	background: var(--main-color);
 } 
-header div {
+header .container {
 	display: grid;
 	grid-template-columns: 2fr auto;
 	grid-gap: 3rem;
@@ -36,7 +36,7 @@ header nav {
 	grid-gap: 1rem;
 }
 header a {
-	color: var(--light-text);
+	color: #fff;
 	/* font-weight: bold; */
 	font-size: large;
 }
@@ -57,8 +57,12 @@ button:hover {
 	filter: invert(1);
 }
 #searchResults {
-	padding: 2rem;
-	margin-bottom: 2rem;
+	display: none;
+	position: absolute;
+	/* left: 40%; */
+    /* top: 0; */
+	background: #eee;
+	padding: 1.5rem;
 }
 img {
 	max-width: 100%;
@@ -106,4 +110,11 @@ img {
     text-align: center;
     vertical-align: baseline;
     border-radius: .25rem;
+}
+
+.course-page .top-info {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 1rem;
+	margin-bottom: 4rem;
 }

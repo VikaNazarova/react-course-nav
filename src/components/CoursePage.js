@@ -26,25 +26,29 @@ class CoursePage extends React.Component {
         if (error) return <div>{`Error: ${error.message}`}</div>;
 
         return (
-        <div>
-           <h1>{course.course_title}</h1>
-           <img src={course.image} alt={course.course_title} />
-           <div className="stats">
-                <ul>
-                    <li><b>Price:</b> {course.price}</li>
-                    <li><b>Provider:</b> {course.provider}</li>
-                    <li><b>Languages:</b> {course.languages.map(language => language + ' ')}</li>
-                    <li><b>Partners:</b> {course.partners.map(partner => partner + ' ')}</li>
-                </ul>
-           </div>
-           <div>
-            <ul>
-                {course.department.map(item => <li><Badge text={item} /></li>)}
-            </ul>
-           </div>
-           <p>{course.description}</p>
-           <Button component="a" text="Go to course" href={course.link} target="_blank" />
-        </div>
+            <>
+                <h1>{course.course_title}</h1>
+                <div className="course-page">
+                    <div className="top-info">
+                        <img src={course.image} alt={course.course_title} />
+                        <div className="stats">
+                            <ul>
+                                <li><b>Price:</b> {course.price}</li>
+                                <li><b>Provider:</b> {course.provider}</li>
+                                <li><b>Languages:</b> {course.languages.map(language => language + ' ')}</li>
+                                <li><b>Partners:</b> {course.partners.map(partner => partner + ' ')}</li>
+                            </ul>
+                            <ul>
+                                {course.department.map(item => <li><Badge text={item} /></li>)}
+                            </ul>
+                        </div>    
+                    </div>
+                    <div>
+                        <p>{course.description}</p>
+                        <Button component="a" text="Go to course" href={course.link} target="_blank" />
+                    </div>
+                </div>
+            </>
         );
     }
 }
